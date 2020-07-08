@@ -94,37 +94,12 @@ class ListItemTVC: UITableViewCell, WKNavigationDelegate {
     }
     
     private func setUpCardView() {
-//        self.cardView.layer.cornerRadius = 5.0
-//        self.cardView.layer.borderWidth = 1.0
-//        self.cardView.layer.borderColor = UIColor.clear.cgColor
-//        self.cardView.layer.masksToBounds = true
-        
         self.contentView.layer.shadowColor = UIColor.gray.cgColor
         self.contentView.layer.shadowOffset = CGSize(width: 0, height: 1.0)
         self.contentView.layer.shadowRadius = 5.0
         self.contentView.layer.shadowOpacity = 0.7
         self.contentView.layer.masksToBounds = false
     }
-    
-//    private func initializeWebView(urlString: String) {
-//        let config = WKWebViewConfiguration.init()
-//        config.allowsInlineMediaPlayback = true
-//        config.mediaTypesRequiringUserActionForPlayback = .video
-//        self.wkWebView = WKWebView.init(frame: self.playerView.bounds, configuration: config)
-//        self.wkWebView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-//        self.wkWebView.navigationDelegate = self
-//        self.wkWebView.scrollView.isScrollEnabled = false
-//        self.playerView.addSubview(wkWebView)
-//        self.loadVideo(urlString: urlString)
-//    }
-    
-//    func loadVideo(urlString: String) {
-//        let url = Bundle.main.path(forResource: "player", ofType: "html")!
-//        let htmlString = htmlStringWithFilePath(url)!
-//        let videoHTMLString = htmlString.replacingOccurrences(of: "%@", with: urlString + "?enablejsapi=1&rel=0&playsinline=1&autoplay=1")
-//
-//        self.wkWebView.loadHTMLString(videoHTMLString, baseURL: nil)
-//    }
     
     func loadTwitterVideo(videoUrl: String) {
         let url = URL(string: videoUrl)!
@@ -170,25 +145,6 @@ class ListItemTVC: UITableViewCell, WKNavigationDelegate {
         }
         self.delegate.openWebView(with: data!.urlString)
     }
-    
-//    fileprivate func htmlStringWithFilePath(_ path: String) -> String? {
-//
-//        var error: NSError?
-//
-//        let htmlString: NSString?
-//        do {
-//            htmlString = try NSString(contentsOfFile: path, encoding: String.Encoding.utf8.rawValue)
-//        } catch let error1 as NSError {
-//            error = error1
-//            htmlString = nil
-//        }
-//
-//        if let _ = error {
-//            print("Lookup error: no HTML file found for path, \(path)")
-//        }
-//
-//        return htmlString! as String
-//    }
     
     func loadYTVideo(with id: String) {
         self.ytPlayer = YTPlayerView()

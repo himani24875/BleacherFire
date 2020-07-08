@@ -82,14 +82,6 @@ extension ViewController: UITableViewDelegate {
                 listCell.notifyIsCellCompletelyVisible = checkVisibilityOfCells(cell: listCell)
             }
         }
-//        if let indexPathForVisibleCells = self.tableView.indexPathsForVisibleRows {
-//            if indexPathForVisibleCells.count > 0 {
-//                for indexPath in indexPathForVisibleCells {
-//                    let currentCell = self.tableView.cellForRow(at: indexPath) as! ListItemTVC
-//                    currentCell.notifyIsCellCompletelyVisible = checkVisibilityOfCells(cell: currentCell, indexPath: indexPath)
-//                }
-//            }
-//        }
     }
     
     func checkVisibilityOfCells(cell: ListItemTVC) -> Bool {

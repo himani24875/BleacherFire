@@ -22,7 +22,6 @@
 		F674EE6024ADFC6600A226BE /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674EE5F24ADFC6600A226BE /* WebViewVC.swift */; };
 		F674EE6524ADFFD000A226BE /* ListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674EE6424ADFFD000A226BE /* ListDataProvider.swift */; };
 		F674EE6824AE00B800A226BE /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F674EE6724AE00B800A226BE /* GlobalFunctions.swift */; };
-		F6B70A9724B0BF6E00283ADE /* player.html in Resources */ = {isa = PBXBuildFile; fileRef = F6B70A9624B0BF6E00283ADE /* player.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +44,6 @@
 		F674EE5F24ADFC6600A226BE /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
 		F674EE6424ADFFD000A226BE /* ListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataProvider.swift; sourceTree = "<group>"; };
 		F674EE6724AE00B800A226BE /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
-		F6B70A9624B0BF6E00283ADE /* player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = player.html; path = ../../../../Desktop/player.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +84,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F66731E124B6473600ED1580 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				F66731DF24B5C06B00ED1580 /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		F674EE3B24ADFB6500A226BE = {
 			isa = PBXGroup;
 			children = (
@@ -107,8 +113,8 @@
 		F674EE4624ADFB6500A226BE /* BleacherFire */ = {
 			isa = PBXGroup;
 			children = (
+				F66731E124B6473600ED1580 /* Constant */,
 				F66731DA24B31EEE00ED1580 /* Model */,
-				F6B70A9624B0BF6E00283ADE /* player.html */,
 				F674EE6924AE021600A226BE /* DataProvider */,
 				F674EE6624AE009F00A226BE /* Utility */,
 				F674EE6324ADFD8000A226BE /* View */,
@@ -117,7 +123,6 @@
 				F674EE5024ADFB6A00A226BE /* Assets.xcassets */,
 				F674EE5224ADFB6A00A226BE /* LaunchScreen.storyboard */,
 				F674EE5524ADFB6A00A226BE /* Info.plist */,
-				F66731DF24B5C06B00ED1580 /* Constants.swift */,
 			);
 			path = BleacherFire;
 			sourceTree = "<group>";
@@ -230,7 +235,6 @@
 				F674EE5E24ADFC3600A226BE /* ListItemTVC.xib in Resources */,
 				F674EE5424ADFB6A00A226BE /* LaunchScreen.storyboard in Resources */,
 				F674EE5124ADFB6A00A226BE /* Assets.xcassets in Resources */,
-				F6B70A9724B0BF6E00283ADE /* player.html in Resources */,
 				F674EE4F24ADFB6500A226BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
