@@ -1,0 +1,24 @@
+PODS:
+  - TwitterCore (3.2.0)
+  - TwitterKit (3.4.2):
+    - TwitterCore (>= 3.2.0)
+  - youtube-ios-player-helper (1.0.2)
+
+DEPENDENCIES:
+  - TwitterKit
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - TwitterCore
+    - TwitterKit
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
+  TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
+  youtube-ios-player-helper: 40b96e52c22445f0fdc43731cefa32c67075ff81
+
+PODFILE CHECKSUM: 64eb87dbc10bfe4a78c03b61b57b0876681570d3
+
+COCOAPODS: 1.8.4
